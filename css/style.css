@@ -1,0 +1,82 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra principal */
+#barra_principal {
+    background-color: #d00000;
+    width: auto;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* Logo */
+    #logo {
+        background-color: white;
+        width: 10rem;
+        height: 2.5rem;
+        margin-left: 4rem;
+    }
+
+    /* Opciones */
+    #img_engranaje {
+        border-radius: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: rgb(218, 218, 218);
+        padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    }
+
+    #img_engranaje:hover {
+
+    }
+
+    #opciones {
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items:end;
+        position: relative;
+    }
+
+    #primera_opcion {
+        border-start-start-radius: 1rem;
+    }
+
+    #ultima_opcion {
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+
+    #drop_o {
+        position: absolute;
+        top: 155%;
+        width: 8rem;
+    }
+
+    .drop_o_c {
+        background-color: rgb(218, 218, 218);
+        padding: 1rem 1rem 1rem 1rem;
+        position: relative;
+        display: none;
+    }
+
+    .drop_o_c:hover {
+        background-color: rgb(194, 194, 194);
+    }
+
+    #opciones:hover .drop_o_c {
+        display: flex;
+    }
+
+
+
+/* Menu desplegable */
+
+/* Buscador */
+
+/* Pie de pagina */
