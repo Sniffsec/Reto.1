@@ -1,6 +1,6 @@
 :root   {
     --main-c:#FFC300;
-    --white-c:#fff;
+    --black-c:#000;
 }
 
 /** Estilos generales**/
@@ -53,6 +53,16 @@ h6  {
     font-size: 1.2rem;
 }
 
+/*enlaces y botones*/
+
+.cta-main   {
+    background-color: var(--main-c);
+    padding: 1rem 1rem;
+    color: #FFF;
+    font-size: bold;
+    border-radius: 2px;
+}
+
 /*Header restaurante*/
 
 header.main-header  {
@@ -60,7 +70,6 @@ header.main-header  {
     top: 0;
     width: 100%;
     z-index: 9999;
-    color: #FFF;
 }
 
 .header-wrap    {
@@ -84,7 +93,7 @@ header.main-header  {
     color: #FFF;
 }
 
-/* menu headere */
+/* menu header */
 
 .nav-header {
     display: flex;
@@ -123,7 +132,7 @@ li.menu-item    {
 
 li.menu-item a{
     padding: .5rem 1rem;
-  /*  color: #FFF; */
+    color: #FFF;
 }
 
 li.menu-item a:hover    {
@@ -217,10 +226,12 @@ input#check {
     }
 }
 
+
+
 /* hero section home page*/
 
 .wrap-header-hero   {
-    background: linear-gradient(to bottom, rgb(0 0 0 / -75), rgb(0 0 0 / .5)), url(https://historia-biografia.com/wp-content/uploads/2023/04/Salt-Bae.jpg);
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(https://historia-biografia.com/wp-content/uploads/2023/04/Salt-Bae.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -237,4 +248,15 @@ input#check {
     color: #FFF;
     text-align: center;
     width: 50%;
+}
+
+.wrap-hero-home-page p  {
+    margin-bottom: 2rem;
+}
+
+@media  (max-width:768px){
+    .wrap-hero-home-page{
+        width: 100%;
+        pad: 1rem;
+    }
 }
