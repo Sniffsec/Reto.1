@@ -1,0 +1,240 @@
+:root   {
+    --main-c:#FFC300;
+    --white-c:#fff;
+}
+
+/** Estilos generales**/
+
+html    {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited   {
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+p   {
+    font-size: 1.1rem;
+}
+
+h1  {
+    font-size: 2.4rem;
+}
+
+h2  {
+    font-size: 2rem;
+}
+
+h3  {
+    font-size: 1.8rem;
+}
+
+h4  {
+    font-size: 1.6rem;
+}
+
+h5  {
+    font-size: 1.4rem;
+}
+
+h6  {
+    font-size: 1.2rem;
+}
+
+/*Header restaurante*/
+
+header.main-header  {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    color: #FFF;
+}
+
+.header-wrap    {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.wrap-logo-header   {
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+
+}
+
+.logo-header    {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FFF;
+}
+
+/* menu headere */
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-wrap-header    {
+    display: flex;
+    flex-basis: 50%;
+}
+
+ul.main-menu    {
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+ul.main-menu #nav-main-contact  {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: var(--main-c);
+    color: #FFF;
+}
+
+li.menu-item    {
+    margin: .75rem;
+    display: flex;
+}
+
+li.menu-item a{
+    padding: .5rem 1rem;
+  /*  color: #FFF; */
+}
+
+li.menu-item a:hover    {
+    color: var(--main-c);
+}
+
+i.toggle-menu img   {
+    width: 27px;
+    z-index: 99;
+}
+
+i.toggle-menu   {
+    display: none;
+    background-color: #FFF;
+    border: none;
+    z-index: 9999;
+}
+
+input#check {
+   display: none;
+}
+
+@media  (min-width:880px){
+    .header-wrap{
+        padding: .5rem 5rem;
+    }
+}
+
+@media (min-width:768px){
+    a.logo-header{
+      color: #fff;
+    }
+  }
+
+@media (max-width:768px){
+    header.main-header{
+        margin-bottom: 4rem;
+    }
+    .header-wrap{
+        position: fixed;
+        width: 100%;
+        background-color: #FFF;
+        padding: 0;
+        top: 0;
+        z-index: 9999;
+        height: 60px;
+    }
+    .wrap-logo-header   {
+        position: fixed;
+        z-index: 999;
+        top: 3%;
+        left: 3%;
+    }
+    
+    .logo-header, li.menu-item a{
+        color: #222;
+    }
+    
+    i.toggle-menu   {
+        display: flex;
+    }
+    
+    ul.main-menu,#nav-main-contact  {
+        display: none;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul.main.menu    {
+        position: fixed;
+        background-color: #FFF;
+    }
+    
+    label.checkbtn  {
+        position: fixed;
+        right: 3%;
+        top: 3%;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    #check:checked ~ ul{
+        display: flex;
+        z-index: 9;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        top: 0;
+        font-size: 2rem;
+    }
+}
+
+/* hero section home page*/
+
+.wrap-header-hero   {
+    background: linear-gradient(to bottom, rgb(0 0 0 / -75), rgb(0 0 0 / .5)), url(https://historia-biografia.com/wp-content/uploads/2023/04/Salt-Bae.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-home-page {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-hero-home-page    {
+    color: #FFF;
+    text-align: center;
+    width: 50%;
+}
