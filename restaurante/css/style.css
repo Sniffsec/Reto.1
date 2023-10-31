@@ -1,0 +1,158 @@
+/*Colores predeterminados*/
+
+:root   {
+    --main-c:#8d8d8d;
+    --black-c:#000;
+}
+
+/** Estilos generales**/
+
+html    {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*img header*/
+
+header	{
+	background-image: url(https://wallpapercave.com/wp/wp9191616.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #FFF;
+}
+
+/*mas estilos generales*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited   {
+    color: inherit;
+}
+
+
+/*enlace y boton de reserva*/
+
+.cta-main   {
+    background-color: var(--main-c);
+    padding: 1rem 1rem;
+    color: #FFF;
+    font-size: bold;
+    border-radius: 2px;
+}
+
+/* Logo */
+#logo_barra {
+    background-color: rgba(255, 255, 255, 0);
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: auto;
+    height: 5rem;
+    margin-left: 1rem;
+    top: 0;
+}
+
+/*scroll*/
+
+
+
+/*enunciado principal y boton de reserva*/
+
+.wrap-header-hero   {
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(https://historia-biografia.com/wp-content/uploads/2023/04/Salt-Bae.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-home-page {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-hero-home-page    {
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+}
+
+.wrap-hero-home-page p  {
+    margin-bottom: 2rem;
+}
+
+@media  (max-width:768px){
+    .wrap-hero-home-page{
+        width: 100%;
+        pad: 1rem;
+    }
+}
+
+/*boton de desplazamiento*/
+
+
+/* Estilo para el área de contenido */
+#contenido {
+    display: none; 
+}
+
+/*barra de navegacion*/
+
+nav    {
+    background-color: #33333300;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.menu   {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu li    {
+    display: inline;
+    margin-right: 100px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/*cambiar el color pasando por encima*/
+
+.menu   a:hover {
+    color: #ff0000;
+}
+
+/*menu responsive*/
+
+@media  (max-width: 768px)  {
+    .menu   {
+        display: block;
+        text-align: center;
+    }
+    .menu   li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
