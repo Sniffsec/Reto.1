@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 102, 0);
+}
+body{
+    background-color: black;
+}
+
+#menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#menu_1 {
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+#menu_1 li {
+    list-style: none;
+}
+
+#menu_2 {
+    display: flex;
+    color: white;
+    background-color: rgb(146, 146, 146);
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
+#menu_2 li {
+    list-style: none;
+}
+  /*   
+
+ul {
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border: 1px solid white;
+    
+}
+.Entrantes li {
+    display: flex;
+    color: darkkhaki;
+}
+
+
+.Primeros li {
+    display: flex;
+    color: darkkhaki;
+}
+.Segundos li {
+    display: flex;
+    color: darkkhaki;
+}
+.Postres li {
+    display: flex;
+    align-content: stretch;
+    color: darkkhaki;
+}
+h2, h3, h4, h5 {
+    font-size: 20px;
+    color: gold;
+} 
