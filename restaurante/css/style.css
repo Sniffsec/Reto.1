@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(0, 1, 78);
+}
+
 /*Colores predeterminados*/
 
 :root   {
@@ -11,61 +20,44 @@ html    {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/*img header*/
-
-header	{
-	background-image: url(https://wallpapercave.com/wp/wp9191616.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	color: #FFF;
-}
-
-/*mas estilos generales*/
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:visited   {
-    color: inherit;
-}
-
-
-/*enlace y boton de reserva*/
-
-.cta-main   {
-    background-color: var(--main-c);
-    padding: 1rem 1rem;
-    color: #FFF;
-    font-size: bold;
-    border-radius: 2px;
-}
-
 /* Logo */
 #logo_barra {
-    background-color: rgba(255, 255, 255, 0);
-    height: 4.5rem;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     width: auto;
-    height: 5rem;
+    height: 3.5rem;
     margin-left: 1rem;
     top: 0;
 }
 
-/*scroll*/
 
-
+/* Menu */
+#menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+    
+    .referencias {
+        background-color: rgb(255, 60, 0);
+        padding: 1rem;
+        width: 8rem;
+        font-size: small;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 1rem;
+    }
+    
+    .referencias:hover {
+        background-color: rgb(168, 39, 0);
+    }
 
 /*enunciado principal y boton de reserva*/
 
@@ -77,7 +69,7 @@ a:visited   {
 }
 
 .hero-home-page {
-    height: 90vh;
+    height: 88vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,59 +92,124 @@ a:visited   {
     }
 }
 
-/*boton de desplazamiento*/
+/* Menus */
 
-
-/* Estilo para el área de contenido */
-#contenido {
-    display: none; 
+#carta {
+    background-color: black;
+    height: 100vh;
 }
 
-/*barra de navegacion*/
+.titulo_menus {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-top: 20rem;
+}
 
-nav    {
-    background-color: #33333300;
-    position: fixed;
-    top: 80px;
-    width: 100%;
+.titulo_menus h2 {
+    background-color: rgb(180, 27, 0);
+    padding: 1rem 1rem 0 1rem;
+    border-start-start-radius: 1rem;
+    border-start-end-radius: 1rem;
+}
+
+#menus {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu_1, #menu_2 {
+    background-color: rgb(255, 38, 0);
+    color: rgb(255, 255, 255);
+    padding: 2rem 1rem 2rem 1rem;
     text-align: center;
-    
+    border-radius: 1rem;
 }
 
-.menu   {
+#menus li {
+    font-style: none;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+}
+
+/* Reserva */
+#padre_reserva {
+    height: 100vh;
+    background-color: rgb(209, 112, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nombre_apellido {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+
+#nombre_apellido input {
+    margin-bottom: 1rem;
+}
+
+#fecha {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+#fecha input {
+    margin-bottom: 1rem;
+}
+
+#nombre_apellido input, #fecha input {
+    background-color: rgb(255, 38, 0);
+    color: white;
+    border: transparent;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
     text-align: center;
 }
 
-.menu li    {
-    display: inline;
-    margin-right: 100px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #FFF;
+#nombre_apellido label, #fecha label {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
-/*cambiar el color pasando por encima*/
-
-.menu   a:hover {
-    color: #ff0000;
+#lab_nota {
+    margin-top: 0.5rem;
 }
 
-/*menu responsive*/
-
-@media  (max-width: 768px)  {
-    .menu   {
-        display: block;
-        text-align: center;
-    }
-    .menu   li {
-        display: block;
-        margin: 10px 0;
-    }
+#nota {
+    resize: none;
+    border: transparent;
+    background-color: rgb(255, 38, 0);
+    border-radius: 1rem;
+    height: 6rem;
+    padding: 1rem;
 }
 
+/* Sobre nosotros */
+#padre_nosotros {
+    height: 100vh;
+    background-color: rgb(0, 17, 255);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+#integrantes {
+    color: white;
+    flex: 33%;
+}
+
+#integrantes img {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 2rem;
+}
