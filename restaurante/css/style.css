@@ -213,3 +213,29 @@ html    {
     height: 20rem;
     border-radius: 2rem;
 }
+
+/* Contacto */
+#padre_contacto {
+    height: 100vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#padre_contacto h1 {
+    margin-bottom: 2rem;
+    background-color: orangered;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+#padre_contacto h2 {
+    margin-top: 4rem;
+}
+
+#padre_contacto h3 {
+    margin-top: 0.5rem;
+}
