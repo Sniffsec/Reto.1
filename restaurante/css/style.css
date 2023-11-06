@@ -83,6 +83,7 @@ html    {
     flex-direction: column;
     justify-content: center;
     padding: 5rem;
+    text-align: center;
 }
 
 /* Menus */
@@ -273,4 +274,51 @@ html    {
 
 #copy {
     color: rgb(218, 218, 218);
+}
+
+@media screen and (max-width: 600px) {
+    /* Menu */
+    #menu {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        padding-bottom: 0.4rem;
+    }
+        
+        .referencias {
+            font-size:x-small;
+
+        }
+
+            /* Menus */
+    .titulo_menus {
+        font-size: small;
+    }
+
+    #menu_1, #menu_2 {
+        width: 15rem;
+        font-size: small;
+        }
+
+        /* Reserva */
+    #nombre_apellido {
+        margin-right: 0;
+        margin-top: 9rem;
+    }
+
+    #fecha {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+        /* Sobre nosotros */
+    #padre_nosotros {
+        height: auto;
+    }
+
+    #integrantes {
+        flex: 100%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
