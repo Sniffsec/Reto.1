@@ -4,25 +4,24 @@
 }
 
 header {
-    background-color: rgb(0, 1, 78);
+    background-image: url(../img/restaurante.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-/*Colores predeterminados*/
-
-:root   {
-    --main-c:#8d8d8d;
-    --black-c:#000;
-}
-
-/** Estilos generales**/
 
 html    {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Barra */
+#barra {
+    position: fixed;
+    width: 100%;
+}
+
 /* Logo */
 #logo_barra {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,17 +41,22 @@ html    {
 #menu {
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    background-color: black;
+    padding-bottom: 0.4rem;
 }
     
     .referencias {
+        color: white;
         background-color: rgb(255, 60, 0);
         padding: 1rem;
         width: 8rem;
-        font-size: small;
+        font-size: medium;
         text-align: center;
         font-weight: bold;
-        border-radius: 1rem;
+        flex: 20%;
+        border-right: 5px solid rgb(0, 0, 0);
+        border-left: 5px solid rgb(0, 0, 0);
+        border-radius: 0.5rem;
     }
     
     .referencias:hover {
@@ -61,39 +65,15 @@ html    {
 
 /*enunciado principal y boton de reserva*/
 
-.wrap-header-hero   {
-    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(https://historia-biografia.com/wp-content/uploads/2023/04/Salt-Bae.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hero-home-page {
-    height: 88vh;
+#enunciado {
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.wrap-hero-home-page    {
-    color: #ffffff;
-    text-align: center;
-    width: 50%;
-}
-
-.wrap-hero-home-page p  {
-    margin-bottom: 2rem;
-}
-
-@media  (max-width:768px){
-    .wrap-hero-home-page{
-        width: 100%;
-        pad: 1rem;
-    }
+    align-items: center;
+    color: white;
 }
 
 /* Menus */
-
 #carta {
     background-color: black;
     height: 100vh;
@@ -103,7 +83,6 @@ html    {
     display: flex;
     justify-content: space-around;
     color: white;
-    padding-top: 20rem;
 }
 
 .titulo_menus h2 {
@@ -116,6 +95,7 @@ html    {
 #menus {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #menu_1, #menu_2 {
@@ -149,6 +129,10 @@ html    {
 
 #nombre_apellido input {
     margin-bottom: 1rem;
+}
+
+::placeholder {
+    color: white;
 }
 
 #fecha {
@@ -203,14 +187,20 @@ html    {
     align-items: center;
 }
 
+#titulo_nosotros {
+    padding-top: 2rem;
+    flex: 100%;
+    color: white;
+}
+
 #integrantes {
     color: white;
     flex: 33%;
 }
 
 #integrantes img {
-    width: 18rem;
-    height: 20rem;
+    width: 14rem;
+    height: 12rem;
     border-radius: 2rem;
 }
 
@@ -233,7 +223,7 @@ html    {
 }
 
 #padre_contacto h2 {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 #padre_contacto h3 {
