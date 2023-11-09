@@ -1,0 +1,179 @@
+#include <Keyboard.h>  // Incluye la biblioteca para emular el teclado
+#include "GFButton.h"  // Incluye una biblioteca personalizada para manejar botones
+
+
+
+
+
+
+
+
+// Asigna pines a variables para facilitar su uso
+int izquierda = 2;
+int derecha = 3;
+int abajo = 4;
+int arriba = 5;
+int boton1 = 8;
+int boton2 = 9;
+int boton3 = 11;
+int boton4 = 12;
+int boton5 = 13;
+int insertcoin = 10;
+
+
+
+
+
+
+
+
+GFButton botonmoneda(insertcoin); // Crea un objeto GFButton llamado 'botonmoneda' en el pin 'insertcoin'
+bool botonmonedaPresionado = false; // Variable para rastrear si el botón de la moneda está presionado
+
+
+
+
+
+
+
+
+void setup() {
+// Configura los pines como entradas con resistencias de pull-up internas
+pinMode(derecha, INPUT_PULLUP);
+pinMode(izquierda, INPUT_PULLUP);
+pinMode(arriba, INPUT_PULLUP);
+pinMode(abajo, INPUT_PULLUP);
+pinMode(boton1, INPUT_PULLUP);
+pinMode(boton2, INPUT_PULLUP);
+pinMode(boton3, INPUT_PULLUP);
+pinMode(boton4, INPUT_PULLUP);
+pinMode(boton5, INPUT_PULLUP);
+Keyboard.begin(); // Inicia la emulación del teclado
+}
+
+
+
+
+
+
+
+
+void loop() {
+// Comprueba si los botones están presionados y emula la pulsación de las teclas correspondientes
+if (digitalRead(izquierda) == LOW) {
+  Keyboard.press('s');
+  delay(140);
+  Keyboard.releaseAll();
+}
+
+
+
+
+
+
+
+
+if (digitalRead(derecha) == LOW) {
+  Keyboard.press('w');
+  delay(140);
+  Keyboard.releaseAll();
+}
+
+
+
+
+
+
+
+
+if (digitalRead(arriba) == LOW) {
+  Keyboard.press('a');
+  delay(140);
+  Keyboard.releaseAll();
+}
+
+
+
+
+
+
+
+
+if (digitalRead(abajo) == LOW) {
+  Keyboard.press('d');
+  delay(140);
+  Keyboard.releaseAll();
+}
+
+
+
+
+
+
+
+
+if (digitalRead(boton1) == LOW) {
+  Keyboard.press('r');
+  delay(100);
+  Keyboard.releaseAll();
+}
+
+
+
+
+
+
+
+
+if (digitalRead(boton2) == LOW) {
+  Keyboard.press('m');
+  delay(100);
+  Keyboard.releaseAll();
+}
+
+
+
+
+if (digitalRead(boton3) == LOW) {
+  Keyboard.press('o');
+  delay(100);
+  Keyboard.releaseAll();
+}
+
+
+
+
+if (digitalRead(boton4) == LOW) {
+  Keyboard.press('l');
+  delay(100);
+  Keyboard.releaseAll();
+}
+
+
+
+
+if (digitalRead(boton5) == LOW) {
+  Keyboard.press('b');
+  delay(100);
+  Keyboard.releaseAll();
+}
+
+
+
+
+
+
+
+
+// Determina si al seguir pulsando el boton debe seguir poniendo "5"
+if (botonmoneda.isPressed()) {
+  if (!botonmonedaPresionado) {
+    Keyboard.press('5');
+    delay(100);
+    Keyboard.releaseAll();
+    botonmonedaPresionado = true;
+  }
+} else {
+  botonmonedaPresionado = false; // Si el botón de la moneda no está presionado, restablece el estado de la variable
+}
+}
